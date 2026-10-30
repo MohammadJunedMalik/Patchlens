@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+venv/
+*.db
+*.sqlite3
+my_report.json
+scan_report.json
+.wakatime-project
+
+.pytest_cache/
+
