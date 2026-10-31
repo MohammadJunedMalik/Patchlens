@@ -1,3 +1,7 @@
+<p align="center">
+<img src="./banner.svg" alt="Patchlens Banner" width="100%">
+</p>
+
 ## Hii everyone My name is MJM AKA Mohammad Juned Malik , it's going to be my second project which i am going to avail this publically and don't mind my english or it's grammar if anything goes wrong while writing and I have written this code as most simplest form as possible so anyone who knows some basic python, OOPs(Class) and it's methods and python libraries can easily understand this project also mostly i have imported files from one other so don't get confused and i have written some comments also in some files , so let's start our project description :- 
 
 # PatchLens - Web Security Assessment & Fix Verification Engine 
