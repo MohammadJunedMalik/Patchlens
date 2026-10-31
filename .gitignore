@@ -8,4 +8,7 @@ scan_report.json
 .wakatime-project
 
 .pytest_cache/
+dist/
+build/
+*.egg-info/
 
