@@ -1,26 +1,35 @@
 from dataclasses import dataclass, field, asdict
 from datetime import datetime, timezone
-from enum import StrEnum
+from enum import Enum
 import hashlib
 from typing import Any, Optional
 
-class Severity(StrEnum):
+class Severity(str, Enum):
     INFO = "INFO"
     LOW = "LOW"
     MEDIUM = "MEDIUM"
     HIGH = "HIGH"
     CRITICAL = "CRITICAL"
 
-class Confidence(StrEnum):
+    def __str__(self) -> str:
+        return str(self.value)
+
+class Confidence(str, Enum):
     TENTATIVE = "TENTATIVE"
     FIRM = "FIRM"
     CERTAIN = "CERTAIN"
 
-class FindingStatus(StrEnum):
+    def __str__(self) -> str:
+        return str(self.value)
+
+class FindingStatus(str, Enum):
     NEW = "NEW"
     OPEN = "OPEN"
     RESOLVED = "RESOLVED"
     REOPENED = "REOPENED"
+
+    def __str__(self) -> str:
+        return str(self.value)
 
 def compute_fingerprint(check_id: str, url: str, target_key: str="") -> str:
     check = check_id.strip()
