@@ -63,7 +63,7 @@ pip install -r requirement.txt
 python main.py --target https://example.com
 
 ### 3. Run a proper scan and save in json :
-python main.py  --target https:example.com --max_pages 5 --max-depth 2 --json report.json
+python main.py --target https://example.com --max-pages 5 --max-depth 2 --json report.json
 
 ### 4. Run fix verification engine :
 run the same scan on the same target and see the results 
